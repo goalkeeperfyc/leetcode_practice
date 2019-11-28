@@ -18,7 +18,10 @@ def reverse(x):
 
 
 # A much more faster version
-def reverse(x):
+# input int
+# output int
+
+def reverse_2(x):
     x = str(x)
     if x[0] == "-":
         new_str_list = []
@@ -31,3 +34,17 @@ def reverse(x):
     if abs(x) > 2147483647:
         return 0
     return x
+
+
+#def reverse_3(x):
+#    x = str(x)
+#    if x[0] == "-":
+#        new_str = "-"
+#        for num in (range(len(x) - 1)):
+#            new_str += x[-num - 1]
+#    else:
+#        new_str_list = [x[-num - 1] for num in range(len(x))]
+#    x = int("".join(new_str_list))
+#    if abs(x) > 2147483647:
+#        return 0
+#    return x
